@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Time Tracker Dashbaord",
+  title: "Time Tracker Dashboard",
   description: "A NextJS app by Duncan Chege",
 };
 
