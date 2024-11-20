@@ -51,7 +51,7 @@ const Schedule = () => {
             <Image className="absolute right-8 top-0 -z-10" src={exerciseIcon} alt="" />
             <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
                 <div className="flex justify-between items-center pb-6">
-                    <p className="text-xl">Work</p>
+                    <p className="text-xl">Exercise</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
                 <h3 className="text-5xl font-light">32hrs</h3>
@@ -63,7 +63,7 @@ const Schedule = () => {
             <Image className="absolute right-8 top-0 -z-10" src={socialIcon} alt="" />
             <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
                 <div className="flex justify-between items-center pb-6">
-                    <p className="text-xl">Work</p>
+                    <p className="text-xl">Social</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
                 <h3 className="text-5xl font-light">32hrs</h3>
@@ -75,7 +75,7 @@ const Schedule = () => {
             <Image className="absolute right-8 top-0 -z-10" src={careIcon} alt="" />
             <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
                 <div className="flex justify-between items-center pb-6">
-                    <p className="text-xl">Work</p>
+                    <p className="text-xl">Self Care</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
                 <h3 className="text-5xl font-light">32hrs</h3>
