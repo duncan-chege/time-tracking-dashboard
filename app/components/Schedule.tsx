@@ -42,8 +42,8 @@ const Schedule = () => {
                     <p className="text-xl">Study</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
-                <h3 className="text-5xl font-light">32hrs</h3>
-                <p className="text-desaturated-blue pt-4">Last Week - 36hrs</p>
+                <h3 className="text-5xl font-light">4hrs</h3>
+                <p className="text-desaturated-blue pt-4">Last Week - 7hrs</p>
             </div>
         </div>
 
@@ -54,8 +54,8 @@ const Schedule = () => {
                     <p className="text-xl">Exercise</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
-                <h3 className="text-5xl font-light">32hrs</h3>
-                <p className="text-desaturated-blue pt-4">Last Week - 36hrs</p>
+                <h3 className="text-5xl font-light">4hrs</h3>
+                <p className="text-desaturated-blue pt-4">Last Week - 5hrs</p>
             </div>
         </div>
 
@@ -66,8 +66,8 @@ const Schedule = () => {
                     <p className="text-xl">Social</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
-                <h3 className="text-5xl font-light">32hrs</h3>
-                <p className="text-desaturated-blue pt-4">Last Week - 36hrs</p>
+                <h3 className="text-5xl font-light">5hrs</h3>
+                <p className="text-desaturated-blue pt-4">Last Week - 10hrs</p>
             </div>
         </div>
 
@@ -78,8 +78,8 @@ const Schedule = () => {
                     <p className="text-xl">Self Care</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
-                <h3 className="text-5xl font-light">32hrs</h3>
-                <p className="text-desaturated-blue pt-4">Last Week - 36hrs</p>
+                <h3 className="text-5xl font-light">2hrs</h3>
+                <p className="text-desaturated-blue pt-4">Last Week - 2hrs</p>
             </div>
         </div>
     </div>
