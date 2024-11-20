@@ -6,20 +6,26 @@ import studyIcon from "../../public/images/icon-study.svg"
 import exerciseIcon from "../../public/images/icon-exercise.svg"
 import socialIcon from "../../public/images/icon-social.svg"
 import careIcon from "../../public/images/icon-self-care.svg"
+import Records from "../data.json";
 
+const RecordsWithIds = Records.map((record, index) => ({
+    ...record,
+    id: index,
+}));
 
 const Schedule = () => {
+
     return (
     <div className="md:w-3/4 grid lg:grid-cols-3 md:grid-cols-2 gap-8">
         <div className="bg-light-red-work rounded-xl pt-12 pb-0 relative z-50">
             <Image className="absolute right-8 top-0 -z-10" src={workIcon} alt="" />
             <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
                 <div className="flex justify-between items-center pb-6">
-                    <p className="text-xl">Work</p>
+                    <p className="text-xl">{ RecordsWithIds[0].title }</p>
                     <Image className="h-auto" src={ellipses} alt="" />
                 </div>
-                <h3 className="text-5xl font-light">32hrs</h3>
-                <p className="text-desaturated-blue pt-4">Last Week - 36hrs</p>
+                <h3 className="text-5xl font-light">{ RecordsWithIds[0].timeframes.daily.current }hrs</h3>
+                <p className="text-desaturated-blue pt-4">Yesterday - { RecordsWithIds[0].timeframes.daily.previous }hrs</p>
             </div>
         </div>
 
