@@ -13,7 +13,11 @@ const RecordsWithIds = Records.map((record, index) => ({
     id: index,
 }));
 
-const Schedule = () => {
+type periodProp = {
+    chosenTime: "Daily" | "Weekly" | "Monthly";
+};
+
+const Schedule = ({ chosenTime }: periodProp) => {
     return (
     <div className="md:w-3/4 grid lg:grid-cols-3 md:grid-cols-2 gap-8">
         <div className="bg-light-red-work rounded-xl pt-12 pb-0 relative z-50">
@@ -22,6 +26,7 @@ const Schedule = () => {
                 <div className="flex justify-between items-center pb-6">
                     <p className="text-xl">{ RecordsWithIds[0].title }</p>
                     <Image className="h-auto" src={ellipses} alt="" />
+                    <p>Chosen Time: {chosenTime}</p>
                 </div>
                 <h3 className="text-5xl font-light">{ RecordsWithIds[0].timeframes.daily.current }hrs</h3>
                 <p className="text-desaturated-blue pt-4">Yesterday - { RecordsWithIds[0].timeframes.daily.previous }hrs</p>
