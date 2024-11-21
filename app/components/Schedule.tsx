@@ -98,7 +98,7 @@ return (
                 <Image className="h-auto" src={ellipses} alt="" />
             </div>
             { chosenTime === "Daily" && <>
-                <h3 className="text-5xl font-light">{ RecordsWithIds[3].timeframes.daily.current }hrs</h3>
+                <h3 className="text-5xl font-light">{ RecordsWithIds[3].timeframes.daily.current }hr</h3>
                 <p className="text-desaturated-blue pt-4">Yesterday - { RecordsWithIds[3].timeframes.daily.previous }hrs
                 </p>
             </> || chosenTime === "Weekly" && <>
@@ -121,7 +121,7 @@ return (
                 <Image className="h-auto" src={ellipses} alt="" />
             </div>
             { chosenTime === "Daily" && <>
-                <h3 className="text-5xl font-light">{ RecordsWithIds[4].timeframes.daily.current }hrs</h3>
+                <h3 className="text-5xl font-light">{ RecordsWithIds[4].timeframes.daily.current }hr</h3>
                 <p className="text-desaturated-blue pt-4">Yesterday - { RecordsWithIds[4].timeframes.daily.previous }hrs
                 </p>
             </> || chosenTime === "Weekly" && <>

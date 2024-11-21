@@ -17,7 +17,7 @@ export default function Sidebar({ chosenTime, setChosenTime }: SidebarProps){
     return (
         <div className="md:w-1/4 bg-dark-blue rounded-xl">
             <div className="bg-blue text-white rounded-xl lg:p-8 p-6 font-light flex items-center md:block">
-                <Image className="border-white border-2 rounded-full w-1/4 md:w-1/2" src={profilePic} alt="" />
+                <Image className="border-white border-2 rounded-full w-1/4 md:w-1/2" src={profilePic} alt="" priority={false} />
                 <div className="md:my-6 md:ml-0 ml-4">
                     <p className="opacity-70 ">Report For</p>
                     <h3 className="lg:text-5xl md:text-3xl text-2xl">Jeremy Robson</h3>
