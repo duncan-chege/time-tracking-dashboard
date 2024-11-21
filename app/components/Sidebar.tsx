@@ -2,8 +2,21 @@
 
 import Image from "next/image"
 import profilePic from "../../public/images/image-jeremy.png";
+import { useState } from "react";
+
 
 export default function Sidebar(){
+    // Define options as a string array and use `as const` to make it a readonly tuple
+    const options = ["Daily", "Weekly", "Monthly"] as const;
+
+    // State to track the selected item
+    const [selectedPeriod, setSelectedPeriod] = useState<typeof options[number]>("Daily");
+
+    // Function to handle item selection
+    const handleItemClick = (item:typeof options[number]) => {
+        setSelectedPeriod(item);
+    }
+
 return (
     <div className="md:w-1/4 bg-dark-blue rounded-xl">
         <div className="bg-blue text-white rounded-xl lg:p-8 p-6 font-light flex items-center md:block">
@@ -15,9 +28,11 @@ return (
         </div>
         <div className="text-desaturated-blue lg:p-8 p-6">
             <ul>
-                <li className="py-2 text-lg cursor-pointer hover:text-white">Daily</li>
-                <li className="py-2 text-lg cursor-pointer hover:text-white">Weekly</li>
-                <li className="py-2 text-lg cursor-pointer hover:text-white">Monthly</li>
+                { options.map((item) => (
+                    <li key={item} className={`py-2 text-lg cursor-pointer hover:text-white ${selectedPeriod === item ? `text-white`: ``}`}
+                    onClick={() => handleItemClick(item)}>{ item }</li>
+                )) }
+                
             </ul>
         </div>
     </div>

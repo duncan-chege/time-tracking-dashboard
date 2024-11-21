@@ -14,7 +14,6 @@ const RecordsWithIds = Records.map((record, index) => ({
 }));
 
 const Schedule = () => {
-
     return (
     <div className="md:w-3/4 grid lg:grid-cols-3 md:grid-cols-2 gap-8">
         <div className="bg-light-red-work rounded-xl pt-12 pb-0 relative z-50">
