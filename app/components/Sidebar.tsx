@@ -5,6 +5,9 @@ import profilePic from "../../public/images/image-jeremy.png";
 
 type SidebarProps = {
     chosenTime: "Daily" | "Weekly" | "Monthly";
+
+    /* setChosenTime is the state updater function, ensuring it can only update chosenTime
+    /with valid values ("Daily", "Weekly", "Monthly") or a function. */
     setChosenTime: React.Dispatch<React.SetStateAction<"Daily" | "Weekly" | "Monthly" >>;
 };
 
@@ -29,7 +32,6 @@ export default function Sidebar({ chosenTime, setChosenTime }: SidebarProps){
                     
                 </ul>
             </div>
-            {/* <Schedule chosenTime={selectedPeriod} /> */}
         </div>
     )
 }

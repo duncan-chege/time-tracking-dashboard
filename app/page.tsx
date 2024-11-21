@@ -9,7 +9,7 @@ export default function Page() {
     // Define options as a string array and use `as const` to make it a readonly tuple
     const options = ["Daily", "Weekly", "Monthly"] as const;
 
-    // State to track the selected item
+    // State to track the selected item. Lifted to the parent
     const [selectedPeriod, setSelectedPeriod] = useState<typeof options[number]>("Daily");
 
     return (
