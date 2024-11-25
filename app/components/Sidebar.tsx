@@ -1,5 +1,3 @@
-// Finish project by Thursday, 21st November
-
 import Image from "next/image"
 import profilePic from "../../public/images/image-jeremy.png";
 
