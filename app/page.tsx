@@ -10,7 +10,7 @@ export default function Page() {
     const options = ["Daily", "Weekly", "Monthly"] as const;
 
     // State to track the selected item. Lifted to the parent
-    const [selectedPeriod, setSelectedPeriod] = useState<typeof options[number]>("Daily");
+    const [selectedPeriod, setSelectedPeriod] = useState<typeof options[number]>(options[0]);
 
     return (
         <div className="bg-very-dark-blue min-h-screen flex items-center justify-center">
