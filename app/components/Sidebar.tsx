@@ -13,7 +13,7 @@ export default function Sidebar({ chosenTime, setChosenTime }: SidebarProps){
     const options = ["Daily", "Weekly", "Monthly"] as const;
 
     return (
-        <div role="sidebar" className="md:w-1/4 bg-dark-blue rounded-xl">
+        <div role="region" aria-label="Sidebar" className="md:w-1/4 bg-dark-blue rounded-xl">
             <div className="bg-blue text-white rounded-xl lg:p-8 p-6 font-light flex items-center md:block">
                 <Image className="border-white border-2 rounded-full w-1/4 md:w-1/2" src={profilePic} alt="" priority={true} />
                 <div className="md:my-6 md:ml-0 ml-4">
