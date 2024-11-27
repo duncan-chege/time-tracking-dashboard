@@ -8,7 +8,7 @@ This time tracking dashboard app lets you switch between viewing Daily, Weekly, 
 - See hover states for all interactive elements on the page
 ## Tech Stack
 
-- **Client:** Next JS, Typescript
+- **Client:** Next JS, Typescript, Tailwind CSS
 - **Deployed under:** Vercel
 
 ## Live Link
