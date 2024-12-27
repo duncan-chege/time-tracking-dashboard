@@ -20,12 +20,12 @@ type periodProp = {
 const Schedule = ({ chosenTime }: periodProp) => {
   return (
     <div
-      role="region"
+      role="tabpanel"
       aria-label="Main Schedule"
       className="md:w-3/4 grid lg:grid-cols-3 md:grid-cols-2 gap-8">
       <div className="bg-light-red-work rounded-xl pt-12 pb-0 relative z-50">
         <Image className="absolute right-8 top-0 -z-10" src={workIcon} alt="" />
-        <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
+        <div className="rounded-xl p-10 text-white cursor-auto bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
             <h2 className="text-xl">{RecordsWithIds[0].title}</h2>
             <Image className="h-auto" src={ellipses} alt="" />
@@ -66,7 +66,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
 
       <div className="bg-soft-blue rounded-xl pt-12 relative z-50">
         <Image className="absolute right-8 top-0 -z-10" src={playIcon} alt="" />
-        <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
+        <div className="rounded-xl p-10 text-white cursor-auto bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
             <h2 className="text-xl">{RecordsWithIds[1].title}</h2>
             <Image className="h-auto" src={ellipses} alt="" />
@@ -111,7 +111,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
           src={studyIcon}
           alt=""
         />
-        <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
+        <div className="rounded-xl p-10 text-white cursor-auto bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
             <h2 className="text-xl">{RecordsWithIds[2].title}</h2>
             <Image className="h-auto" src={ellipses} alt="" />
@@ -156,7 +156,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
           src={exerciseIcon}
           alt=""
         />
-        <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
+        <div className="rounded-xl p-10 text-white cursor-auto bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
             <h2 className="text-xl">{RecordsWithIds[3].title}</h2>
             <Image className="h-auto" src={ellipses} alt="" />
@@ -201,7 +201,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
           src={socialIcon}
           alt=""
         />
-        <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
+        <div className="rounded-xl p-10 text-white cursor-auto bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
             <h2 className="text-xl">{RecordsWithIds[4].title}</h2>
             <Image className="h-auto" src={ellipses} alt="" />
@@ -242,7 +242,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
 
       <div className="bg-soft-orange rounded-xl  pt-12 relative z-50">
         <Image className="absolute right-8 top-0 -z-10" src={careIcon} alt="" />
-        <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
+        <div className="rounded-xl p-10 text-white cursor-auto bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
             <h2 className="text-xl">{RecordsWithIds[5].title}</h2>
             <Image className="h-auto" src={ellipses} alt="" />

@@ -31,14 +31,14 @@ export default function Sidebar({ chosenTime, setChosenTime }: SidebarProps) {
           <h1 className="lg:text-5xl md:text-3xl text-2xl">Jeremy Robson</h1>
         </div>
       </div>
-      <div className="text-desaturated-blue lg:p-8 p-6 flex flex-col">
+      <div className="text-desaturated-blue lg:p-8 p-6 flex flex-col" role="tablist">
           {options.map((item) => (
             <button
               key={item}
               className={`text-left py-2 text-lg cursor-pointer hover:text-white ${
                 chosenTime === item ? `text-white` : ``
               }`}
-              onClick={() => setChosenTime(item)}>
+              onClick={() => setChosenTime(item)} role="tab">
               {item}
             </button>
           ))}

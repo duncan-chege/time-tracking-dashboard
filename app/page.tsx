@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main>
       <div className="bg-very-dark-blue min-h-screen flex items-center justify-center">
-        <div className="flex md:flex-row flex-col gap-8 h-auto md:mx-16 m-8 w-full">
+        <div className="max-w-7xl flex md:flex-row flex-col gap-8 h-auto md:mx-16 m-8 w-full">
           <Sidebar
             chosenTime={selectedPeriod}
             setChosenTime={setSelectedPeriod}
