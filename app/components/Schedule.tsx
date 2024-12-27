@@ -113,7 +113,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
         />
         <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
-            <p className="text-xl">Study</p>
+            <p className="text-xl">{RecordsWithIds[2].title}</p>
             <Image className="h-auto" src={ellipses} alt="" />
           </div>
           {(chosenTime === "Daily" && (
@@ -158,7 +158,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
         />
         <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
-            <p className="text-xl">Exercise</p>
+            <p className="text-xl">{RecordsWithIds[3].title}</p>
             <Image className="h-auto" src={ellipses} alt="" />
           </div>
           {(chosenTime === "Daily" && (
@@ -203,7 +203,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
         />
         <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
-            <p className="text-xl">Social</p>
+            <p className="text-xl">{RecordsWithIds[4].title}</p>
             <Image className="h-auto" src={ellipses} alt="" />
           </div>
           {(chosenTime === "Daily" && (
@@ -244,7 +244,7 @@ const Schedule = ({ chosenTime }: periodProp) => {
         <Image className="absolute right-8 top-0 -z-10" src={careIcon} alt="" />
         <div className="rounded-xl p-10 text-white cursor-pointer bg-dark-blue hover:saturate-200">
           <div className="flex justify-between items-center pb-6">
-            <p className="text-xl">Self Care</p>
+            <p className="text-xl">{RecordsWithIds[5].title}</p>
             <Image className="h-auto" src={ellipses} alt="" />
           </div>
           {(chosenTime === "Daily" && (
