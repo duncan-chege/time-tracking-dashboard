@@ -32,9 +32,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           </div>
           {(chosenTime === "Daily" && (
             <>
-              <h3 className="text-5xl font-light">
+              <p className="text-5xl font-light">
                 {RecordsWithIds[0].timeframes.daily.current}hrs
-              </h3>
+              </p>
               <p className="text-desaturated-blue pt-4">
                 Yesterday - {RecordsWithIds[0].timeframes.daily.previous}hrs
               </p>
@@ -42,9 +42,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           )) ||
             (chosenTime === "Weekly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[0].timeframes.weekly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Week - {RecordsWithIds[0].timeframes.weekly.previous}hrs
                 </p>
@@ -52,9 +52,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
             )) ||
             (chosenTime === "Monthly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[0].timeframes.monthly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Month - {RecordsWithIds[0].timeframes.monthly.previous}
                   hrs
@@ -73,9 +73,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           </div>
           {(chosenTime === "Daily" && (
             <>
-              <h3 className="text-5xl font-light">
+              <p className="text-5xl font-light">
                 {RecordsWithIds[1].timeframes.daily.current}hr
-              </h3>
+              </p>
               <p className="text-desaturated-blue pt-4">
                 Yesterday - {RecordsWithIds[1].timeframes.daily.previous}hrs
               </p>
@@ -83,9 +83,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           )) ||
             (chosenTime === "Weekly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[1].timeframes.weekly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Week - {RecordsWithIds[1].timeframes.weekly.previous}hrs
                 </p>
@@ -93,9 +93,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
             )) ||
             (chosenTime === "Monthly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[1].timeframes.monthly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Month - {RecordsWithIds[1].timeframes.monthly.previous}
                   hrs
@@ -118,9 +118,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           </div>
           {(chosenTime === "Daily" && (
             <>
-              <h3 className="text-5xl font-light">
+              <p className="text-5xl font-light">
                 {RecordsWithIds[2].timeframes.daily.current}hrs
-              </h3>
+              </p>
               <p className="text-desaturated-blue pt-4">
                 Yesterday - {RecordsWithIds[2].timeframes.daily.previous}hrs
               </p>
@@ -128,9 +128,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           )) ||
             (chosenTime === "Weekly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[2].timeframes.weekly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Week - {RecordsWithIds[2].timeframes.weekly.previous}hrs
                 </p>
@@ -138,9 +138,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
             )) ||
             (chosenTime === "Monthly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[2].timeframes.monthly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Month - {RecordsWithIds[2].timeframes.monthly.previous}
                   hrs
@@ -163,9 +163,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           </div>
           {(chosenTime === "Daily" && (
             <>
-              <h3 className="text-5xl font-light">
+              <p className="text-5xl font-light">
                 {RecordsWithIds[3].timeframes.daily.current}hr
-              </h3>
+              </p>
               <p className="text-desaturated-blue pt-4">
                 Yesterday - {RecordsWithIds[3].timeframes.daily.previous}hrs
               </p>
@@ -173,9 +173,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           )) ||
             (chosenTime === "Weekly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[3].timeframes.weekly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Week - {RecordsWithIds[3].timeframes.weekly.previous}hrs
                 </p>
@@ -183,9 +183,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
             )) ||
             (chosenTime === "Monthly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[3].timeframes.monthly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Month - {RecordsWithIds[3].timeframes.monthly.previous}
                   hrs
@@ -208,9 +208,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           </div>
           {(chosenTime === "Daily" && (
             <>
-              <h3 className="text-5xl font-light">
+              <p className="text-5xl font-light">
                 {RecordsWithIds[4].timeframes.daily.current}hr
-              </h3>
+              </p>
               <p className="text-desaturated-blue pt-4">
                 Yesterday - {RecordsWithIds[4].timeframes.daily.previous}hrs
               </p>
@@ -218,9 +218,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           )) ||
             (chosenTime === "Weekly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[4].timeframes.weekly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Week - {RecordsWithIds[4].timeframes.weekly.previous}hrs
                 </p>
@@ -228,9 +228,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
             )) ||
             (chosenTime === "Monthly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[4].timeframes.monthly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Month - {RecordsWithIds[4].timeframes.monthly.previous}
                   hrs
@@ -249,9 +249,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           </div>
           {(chosenTime === "Daily" && (
             <>
-              <h3 className="text-5xl font-light">
+              <p className="text-5xl font-light">
                 {RecordsWithIds[5].timeframes.daily.current}hrs
-              </h3>
+              </p>
               <p className="text-desaturated-blue pt-4">
                 Yesterday - {RecordsWithIds[5].timeframes.daily.previous}hrs
               </p>
@@ -259,9 +259,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
           )) ||
             (chosenTime === "Weekly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[5].timeframes.weekly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Week - {RecordsWithIds[5].timeframes.weekly.previous}hrs
                 </p>
@@ -269,9 +269,9 @@ const Schedule = ({ chosenTime }: periodProp) => {
             )) ||
             (chosenTime === "Monthly" && (
               <>
-                <h3 className="text-5xl font-light">
+                <p className="text-5xl font-light">
                   {RecordsWithIds[5].timeframes.monthly.current}hrs
-                </h3>
+                </p>
                 <p className="text-desaturated-blue pt-4">
                   Last Month - {RecordsWithIds[5].timeframes.monthly.previous}
                   hrs
